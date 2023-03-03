@@ -2,7 +2,7 @@
 
 A tribute to the greatest band ever!
 
-This Android application provides youtube videos for all the Beatles songs organinzed by album using the youtube api.
+This Android application provides youtube videos for all the Beatles songs organized by album using the youtube api.
 
 ## Screenshots
 
