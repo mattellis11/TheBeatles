@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/album_navigation"
+    app:startDestination="@id/albumFragment2">
+
+    <fragment
+        android:id="@+id/albumFragment2"
+        android:name="com.example.thebeatles.AlbumFragment"
+        android:label="fragment_album"
+        tools:layout="@layout/fragment_album" >
+        <action
+            android:id="@+id/action_album_to_tracklist"
+            app:destination="@id/tracklistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tracklistFragment"
+        android:name="com.example.thebeatles.TrackListFragment"
+        android:label="fragment_album2"
+        tools:layout="@layout/fragment_tracklist" >
+        <action
+            android:id="@+id/action_tracklist_to_video"
+            app:destination="@id/videoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.thebeatles.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
+</navigation>
